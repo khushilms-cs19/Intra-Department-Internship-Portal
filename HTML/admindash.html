@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../JS/navbar.css">
+    <script src="../JS/navbar.js"></script>
+    <link rel="stylesheet" href="../CSS/dash.css">
+    <link rel="stylesheet" href="../CSS/admindash.css">
+    <!-- loading google charts CDN below-->
+    <script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="top" style="background-color: #3399ff;">
+        <a href="https://www.bmsce.ac.in/"><img src="../images/bmscelogo2.png" id="bmslogo"/></a>
+        <h1 style="text-align: center;">B.M.S College of Engineering</h1>
+        <h1 style="text-align: center;">Admin Dashboard</h1>
+    </div>
+    <div id="nav-tag"></div>
+    <div class="menu">
+        <p>Filter</p>
+        <div class="buttonContainer">
+            <!-- Calling setChart when a button is clicked -->
+            <input type="button" id="b1" value="Type" onclick="setChart(0)">
+            <input type="button" id="b2" value="Stipend" onclick="setChart(1)">
+        </div>
+    </div>
+    <div class="main">
+        <p>Data</p>
+        <!-- chartContainer div is empty as chart is renedered from JS -->
+        <div id="chart">
+            <div id="chartContainer"></div>
+        </div>
+        
+    </div>
+    <script src="../JS/admindash.js" type="text/javascript"></script>
+</body>
+</html>
